@@ -1,8 +1,8 @@
 pipeline {
     agent none 
 stages {
-    agent { label 'slave1' }
-        stage('checkout') {
+          stage('checkout') {
+                agent { label 'slave1' }
             steps {
                 sh 'echo checkout step'
             }
